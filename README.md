@@ -72,7 +72,7 @@ The conversion logic is a faithful port. These bugs were fixed along the way:
   - a recipient-table subnode could keep a dangling source BID;
   - a table moved from the heap to a subnode was written with subnode NID 0.
 - **Failures are reported instead of aborting.** An object that fails in either pass is logged and skipped instead of aborting the export, and the number of skipped items is reported at the end.
-- **Large mailboxes are much faster.** Linear searches over all NBT/BBT entries were replaced with indexed lookups, removing O(n²) behaviour.
+- **Large mailboxes are much faster.** Linear searches over all NBT/BBT entries were replaced with indexed lookups, removing O(n²) behaviour. For a 9GB OST file this reduced the time from hours to a couple of minutes.
 - **Smaller safeguards:**
   - the destination may not be the source file;
   - the temporary file has a unique name and is deleted afterwards;
