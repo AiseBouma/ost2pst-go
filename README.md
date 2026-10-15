@@ -5,8 +5,11 @@ A Go port of [Niv2023/ost2pst](https://github.com/Niv2023/ost2pst). It converts 
 Only Unicode OST/PST files are supported (Outlook 2003 and later).
 
 ## Using it
-
+ Download the exe file from https://github.com/AiseBouma/ost2pst-go/releases
+ 
 **GUI:** run `ost2pst` (on Windows, `ost2pst.exe`).
+<img width="1063" height="802" alt="ost2pst" src="https://github.com/user-attachments/assets/232d896c-981d-47c7-b5f9-bc403787729b" />
+
 
 1. Click **Select OST (or PST) file**. You can also drop the file onto the program, or pass it as an argument.
 2. For an OST, the mailbox folder is selected automatically. You can pick a different folder in the tree, and that folder and all its subfolders will be exported.
